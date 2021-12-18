@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- using meta tags-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />
+    <!--linking external css-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Homepage</title>
+    <script type="text/javascript" src="../js/all.js"></script>
+  </head>
+  <!--Span tag is used for grouping-->
+  <body class="web_background" onload="display_ct();">
+    <div align="right">
+      <span id="ct"></span>
+    </div>
+
+    <!--Assigning id-->
+    <h1 id="change" align="center"></h1>
+    <h3 id="mymessage"></h3>
+
+    <!--For displaying dialog box-->
+    <script>
+      var name = prompt("Enter your name here");
+      //document.write("<p id="myname">"</p>");
+      document.getElementById("mymessage").innerHTML = name;
+    </script>
+    <!--For displaying navigation bar-->
+    <div class="top-nav">
+      <a class="active" href="indexhome.html">HOME</a>
+      <a href="indexCV.html">CV</a>
+      <a href="indexblog.html">Blog</a>
+      <a href="indexcontact.html">CONTACT</a>
+      <a href="indexresearch.html">RESEARCH</a>
+      <a class="right" href="https://www.google.com/">SEARCH</a>
+    </div>
+    <!--For displaying text -->
+    <div class="banner-area">
+      <h2>ANJAL SHRESTHA</h2>
+      <h3>An IT Student</h3>
+      <h4>BSc.Hons COMPUTING</h4>
+      <h1>WELCOME!!!</h1>
+    </div>
+    <!--For displaying text-->
+    <div class="footer">
+      <p>Reserved © only for ANJAL SHRESTHA</p>
+    </div>
+  </body>
+</html>

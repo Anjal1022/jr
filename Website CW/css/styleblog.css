@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.contentblog{
+    display: flex;
+    padding-left :150px;
+    padding-right: 100px;
+    background: url(../image/4.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.left{
+    flex:70%;
+    
+}
+.swipe{
+    padding: 45px;
+    background-color:skyblue;
+    margin-top: 100px;
+    text-align: justify;
+    border-radius: 10%;
+}
+.swipe h2{
+    color: teal;
+}
+.swipe q{
+    color: green;
+}
+p{
+	
+	font-size:17px;
+		font-family:"Calibri (Body)";
+		color:darkslategray;
+		padding: 32px;
+		background-color: skyblue;
+		
+		
+}

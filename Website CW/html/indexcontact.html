@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width = device-width,
+    initial-scale =1.0"
+    />
+    <title>contact</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../js/all.js"></script>
+  </head>
+  <!--Span tag is used for grouping-->
+  <body class="web_background" onload="display_ct();">
+    <div align="right">
+      <span id="ct"></span>
+    </div>
+    <div class="top-nav">
+      <a class="" href="indexhome.html">HOME</a>
+      <a href="indexCV.html">CV</a>
+      <a class="" href="indexblog.html">Blog</a>
+      <a class="active" href="indexcontact.html">CONTACT</a>
+      <a href="indexresearch.html">RESEARCH</a>
+      <a class="right" href="https://www.google.com/">SEARCH</a>
+    </div>
+    <div class="contact-title">
+      <h1>Say Hello!!</h1>
+      <h2>i am always ready to serve you!</h2>
+    </div>
+    <!--Assigning the data for the form-->
+    <div class="contact-form">
+      <form name="messageform" action="" method="POST" class="formformat">
+        <input
+          type="text"
+          name="firstname"
+          id="fname"
+          value=""
+          class="input-field"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          name="lastname"
+          id="lname"
+          value=""
+          class="input-field"
+          placeholder="last Name"
+        />
+        <input
+          type="text"
+          name="subject"
+          id="sub"
+          value=""
+          class="input-field"
+          placeholder="subject"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value=""
+          class="input-field"
+          placeholder="E-mail"
+        />
+        <p>
+          Gender: <input type="radio" name="gender" value="male" checked />Male
+          <input type="radio" name="gender" value="female" />Female
+        </p>
+        <textarea
+          type="text"
+          name="message"
+          id="message"
+          value=""
+          class="input-field textarea-field"
+          placeholder="Your Message"
+        >
+        </textarea>
+        <button
+          type="button"
+          name="submit"
+          id="submit"
+          value=""
+          onclick="formvalidation()"
+          class="btn"
+        >
+          send message
+        </button>
+      </form>
+    </div>
+
+    <!--For displaying dialog box-->
+    <script type="text/javascript">
+      function formvalidation() {
+        var firstname = document.getElementById("fname").value;
+        var lastname = document.getElementById("lname").value;
+        var subject = document.getElementById("sub").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (firstname == "") {
+          alert("please enter your name");
+          return false;
+        }
+        if (lastname == "") {
+          alert("please enter your name");
+          return false;
+        }
+        if (subject == "") {
+          alert("please enter your subject");
+          return false;
+        }
+        if (email == "") {
+          alert("please enter your email");
+          return false;
+        }
+        if (message == "") {
+          alert("please write something.");
+          return false;
+        } else {
+          alert("thankyou!");
+        }
+      }
+    </script>
+  </body>
+</html>

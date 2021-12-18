@@ -1,0 +1,9 @@
+
+.h1{
+    font-size: 100px;
+}
+body{
+    background-image: url(../image/4.jpg);
+    width: 100%;
+    position: absolute;
+}
